@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>SES Enhacements</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZMM_SES</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZCALC_SERV_CONT</FUNCNAME>
+     <SHORT_TEXT>Serv contract</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>ITAB</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZCONTRACT_SERVICE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>SUBTO</PARAMETER>
+       <TYP>ZCURR_E</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ITAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Contract service ITAB structure</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SUBTO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>currency</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZSES_GET_NW_SERVICES</FUNCNAME>
+     <SHORT_TEXT>GET SERVICES OF A CERTAIN NW</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>P_SRVPOS</PARAMETER>
+       <TYP>ASNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EBELN</PARAMETER>
+       <TYP>EBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_EBELP</PARAMETER>
+       <TYP>EBELP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>P_LOCATION</PARAMETER>
+       <TYP>CHAR18</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>GT_OUTPUT</PARAMETER>
+       <DBSTRUCT>ZSES_GET_NW_SERVICES_GS</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>P_SRVPOS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Activity Number</STEXT>
+       <INDEX> 001</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Purchasing Document Number</STEXT>
+       <INDEX> 002</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_EBELP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Item Number of Purchasing Document</STEXT>
+       <INDEX> 003</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>P_LOCATION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Field length 18</STEXT>
+       <INDEX> 004</INDEX>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>GT_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ZSES_GET_NW_SERVICES_GS</STEXT>
+       <INDEX> 005</INDEX>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

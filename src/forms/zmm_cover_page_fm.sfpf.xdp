@@ -1,0 +1,1476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V10.0.1.20120306.1.870331_SAP" APIVersion="3.5.11310.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2018-10-22T09:28:55Z" uuid="6681d054-b0ff-4a0c-b9aa-62d76077bbdf">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <?formServer defaultPDFRenderFormat acrobat9.0dynamic?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="238.125mm" id="ContentArea_ID" name="ContentArea" w="203.2mm" x="6.35mm" y="6.35mm"/>
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <field access="readOnly" h="7.5mm" id="floatingField000041" name="CurrentPage" presence="hidden" w="55mm" x="65.777mm" y="247.65mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="5E33DC5A-64E0-4960-A277-CD33E6434D3A">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField018467" name="PageCount" presence="hidden" w="55mm" x="65.777mm" y="247.65mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="CC528FAE-6AB5-4C2B-AACF-5AD6B4663538">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+            </field>
+            <draw name="Pages" x="97.946mm" y="250.825mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData contentType="text/html" maxLength="0" xliff:rid="B53DF018-39AB-453B-84F6-203891DD9A52">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p>Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/> of<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+            </draw>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform layout="tb" name="PAGE1" w="8in">
+         <subform h="69.85mm" name="Header" w="203.098mm">
+            <bind match="none"/>
+            <border>
+               <edge presence="hidden"/>
+               <fill/>
+            </border>
+            <subform columnWidths="39.582mm 2.54mm 156.277mm 4.564mm" layout="table" name="Table1" y="36.181mm">
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden"/>
+               </border>
+               <subform layout="row" name="Row1">
+                  <assist role="TR"/>
+                  <draw h="7.029mm" name="Cell1">
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text xliff:rid="E178A667-BE2C-4CD1-9E64-E480E6876C30">Project Name</text>
+                     </value>
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para marginLeft="10.8pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField010777" name="TextField" presence="hidden" w="62mm" x="0mm" y="0mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border>
+                              <?templateDesigner StyleID aped3?>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.WA_HEAD.PRG_NAME"/>
+                  </field>
+                  <draw h="7.029mm">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <value>
+                        <text xliff:rid="A04F5F0C-D80D-4DA7-B2AD-0B3BA06C7D1A">:</text>
+                     </value>
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <para vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                  </draw>
+                  <field colSpan="2" minH="7.029mm" name="PRG_NAME" w="163.275mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="16"/>
+                     </value>
+                     <bind match="dataRef" ref="$.WA_HEAD.PRG_NAME"/>
+                     <desc>
+                        <text name="Schema Annotation">Description of Storage Location</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                  </field>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <bind match="none"/>
+                  <?templateDesigner expand 1?></subform>
+               <subform layout="row" name="Row2">
+                  <assist role="TR"/>
+                  <draw h="6.832mm" name="Cell1">
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text xliff:rid="A52C635A-ABB4-4551-BC0F-A95012B824EB">Project Address</text>
+                     </value>
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para marginLeft="10.8pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField007330" name="TextField" presence="hidden" w="62mm" x="0mm" y="0mm">
+                     <ui>
+                        <textEdit>
+                           <border>
+                              <?templateDesigner StyleID aped3?>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.WA_HEAD.PRG_ADS"/>
+                  </field>
+                  <draw h="6.832mm">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <value>
+                        <text xliff:rid="0CE04B37-7688-4F9D-9ACA-CFB8ED89C2CC">:</text>
+                     </value>
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <para vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                  </draw>
+                  <field colSpan="2" minH="6.832mm" name="PRG_ADS" w="163.275mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="200"/>
+                     </value>
+                     <bind match="dataRef" ref="$.WA_HEAD.PRG_ADS"/>
+                     <desc>
+                        <text name="Schema Annotation">Text field length 200</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                  </field>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <bind match="none"/>
+                  <?templateDesigner expand 0?></subform>
+               <subform layout="row" name="Row3">
+                  <assist role="TR"/>
+                  <draw h="7.029mm" name="Cell1">
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text xliff:rid="53BE386D-DB10-4692-A312-20903799999E">Total Contract Value</text>
+                     </value>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para marginLeft="10.8pt" vAlign="middle"/>
+                  </draw>
+                  <field access="readOnly" h="9mm" id="floatingField019612" name="TextField" presence="hidden" w="62mm" x="0mm" y="0mm">
+                     <ui>
+                        <textEdit>
+                           <border>
+                              <?templateDesigner StyleID aped3?>
+                              <edge stroke="lowered"/>
+                           </border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.WA_HEAD.VENDOR"/>
+                  </field>
+                  <draw h="7.029mm">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <value>
+                        <text xliff:rid="A89395C7-5E0E-412A-94B4-F383722EE750">:</text>
+                     </value>
+                     <font typeface="Arial"/>
+                     <para vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                  </draw>
+                  <field colSpan="2" h="7.029mm" name="TOTAL" w="163.275mm">
+                     <ui>
+                        <numericEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </numericEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <decimal leadDigits="9"/>
+                     </value>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                     <bind match="dataRef" ref="$.TOTAL"/>
+                     <desc>
+                        <text name="Schema Annotation">Net price</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                  </field>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <bind match="none"/>
+                  <?templateDesigner expand 0?></subform>
+               <keep intact="contentArea"/>
+               <bind match="none"/>
+               <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+               <subform layout="row" name="Row4">
+                  <assist role="TR"/>
+                  <draw h="7.029mm">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <para marginLeft="10.8pt" vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <value>
+                        <text xliff:rid="80E3AA41-63F0-4618-A396-570B36DCB273">Vendor</text>
+                     </value>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                  </draw>
+                  <draw h="7.029mm">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <value>
+                        <text xliff:rid="083E63A5-8625-4EAA-BA7B-EA95B56571E2">:</text>
+                     </value>
+                     <font typeface="Arial"/>
+                     <para vAlign="middle"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                  </draw>
+                  <field colSpan="2" minH="7.029mm" name="VENDOR" w="163.275mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="30"/>
+                     </value>
+                     <bind match="dataRef" ref="$.WA_HEAD.VENDOR"/>
+                     <desc>
+                        <text name="Schema Annotation">Name</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                  </field>
+                  <bind match="none"/>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <field h="28.575mm" name="ImageField1" w="34.925mm" x="82.55mm">
+               <ui>
+                  <imageEdit data="embed"/>
+               </ui>
+               <value>
+                  <image contentType="image/jpg">/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/+4ADkFkb2JlAGTAAAAAAf/b
+AIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAgICAgICAgIC
+AwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD
+AwMDAwMDAwMDAwMDAwMDAwMD/8AAEQgBggHCAwERAAIRAQMRAf/EAN8AAQABBAIDAQAAAAAAAAAA
+AAAKAQIICQcLAwQFBgEBAAIBBQEBAAAAAAAAAAAAAAUGBwECAwQJCAoQAAAGAgECAwUCCAkIBgUN
+AAABAgMEBQYHERIIIRMJMUFRFAoiFWFxgZEyIxZ38LHBtTZ2thc4odFSJHU3txhCYrIlJhrxkjM1
+ZlNjc2WlxUaXKEhoeDkRAAEDAgIFBAwLBgUEAgMAAAABAwQCBREGITFBEhNRcRQH8GHBIjJCUiMz
+NBUIgZGhsdFigkNTcyRyksJENRbh8WMlCaKyo1SDJtKTNv/aAAwDAQACEQMRAD8An8AAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHJF7T4AAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeJxw
+kJ59v4Pf4gbHHOGhp+73/Ux/uAz+l1hqOro80yuhtIkzabto5K+6qmvLlX7FwnopJV+01gyonXH0
+m4iCkkpUhS1mlNQvma4Vqe4DXnF8c+1vd290S6db2WpuaszyHLdZ+H+hVKPTO+Xp+6o2+UZz9tPd
+Rq/uiw1rKtfWKmp0NplvJsRtXWW8lxSas1p8i1iIcUbkV5bavIltcsSElyk+SNJTlou8O8MceOfO
+3Wl1T5x6pcyOZfzZH3W09FIo9C8nLRXza01oZPEZH4kJMxqVAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFFKJJGZ+4AawPUS74Y
+nbfif932BTYsrduZwHThNINqUjBKGQlba8stGueEznelTdawrxce/WqSbbZ9VQzZmNLNDRpn1lxP
+3T6y91j3dLn10Znbut2bcbyLCcp4zn41f4NHLSvjrsIssmTLnSpU+wlSJ9hOkvzZ9hMeXJmzZklx
+T0mXLkuqW6/IkPrUta1GZqUoz94wbIkPOvcZ49yrXa7ZZbY3ZYTbbUeO3RRRRR4FFFHkHIGqNtbC
+0jmdfn2scjmY3klcfQbjJm9XWkIz/XVN7WOH8pb1UlPJLadI+nnqQaVkSi79rvMy1PcaHqKb1n9W
+mU+tfLTmW81w6H2Eb7yvwHma/Lor7MSUv2Xd9+Ad1NOVNIbYxDbdXDJ+9weRILypzLKUoeucUkvd
+C7WpcdLlTRdUmKSiJ1PHC1ZysmY4d6ZxY9PtPD7r793LNnUfed6Vvy8ru+hk0U94m94jmjvK0+JT
+YChRLSSi94sB87FwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAChnwZc+/nx/EAMNO87u0xTtV1jIyGd8pbZxkCJdZrzEFvp864u0Nf+
+8LFptxD7GNUqlJcmvEaTP7LSD8xxIh71e49ihdJf9OvgU8pmbqO6mb/105yasNvocbtLffy5G5vU
+Ms//AJ16qE+EiL51nOV7My/Ic+zi4kX2WZVZPWt1aSVrV50h7wQxGaUtSYlfDaImo7COEMtJJJez
+kfPk24P3Ca5Mf1OHvtkTKNl6u8px8p5Zb6PZ41FNFP1/Lrr+vXX4x+SHTLeVA4nWuKfWob67xa8q
+Mmxq3sKDIaGexaU13VSXIdnWToqyW1KiSWjJTa0n4GR8oWRmlSTSZkOaNJft7/GhebkkPmPLNmzj
+ZXcs5hjNu2aT4dFffUkkrsU9Sel3Miq1VuyZW4vtovKg0WRH5MHHNj9KEIZJs1rQxU5Y+Z/aimSG
+ZSvFjg/1ZZtyxmxm7McGZouLf/WeMnvJ+6Pf+q6pzN2TeJNyEq98lNOLsbn8prt66dpt8Qsl/jIj
+IyMuDI+S9pfEXQ+LDyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAooySXJgDgzuA3tg/bzrXINmZ3P+Wqqlk2oMFhTZ2mQXchJprKKmjrM
+jkWE58vD/otoJTizJCTMdG5XBm2QumP6kLn1dZCzJ1m5wh5OyzHV2bKc8LxaKPHrr5ETs0kPrf8A
+vfO+47Z13szPJZnInuKYoKNp5xdbiePIUaoNDVNr6UttNJ/WPLIup99SnFHyZEn54vN1m3qbxXvV
+vEPfvqY6oMt9TGTmMt2KjG5q3jJe/Ge8f4OTkOFxGmXQAAAAC5KlIUhaFGhxpxt5p1tSm3mHmVk4
+y+w6g0uMvMrSSkrSZKSoiMj8Bvbc4Xn2FOssZiWw4xNaR2K43uV0V+BXQbyexL1PJFS5Uah7l7pU
+qAvyqzD9s2CiNyC2ltDMWkz6QrrektKMiSzbGfWgvsyOS4dLLGV86JI4dtuXrXl1Hlf70HuZLbeL
+n3qkYVYK79cuDRp3frs9r6hIFgTY06O3IiSGZUZ5tDrEqO628w+04knEOsutqU260tBkaVJMyMj8
+Bk3DBTzOracj18N6hW3vJX/E+iNDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4d9ZMU1TZW8spCodVXzrKWmJGemS1RYEV2S+USFGQ5IlyV
+NtmSGm0mtxfCUkZmRDXfRvzi6jeywsmU2zThvOV00d9op77RpXYQ++87u1yrut2Y9bTEzKbXeKPy
+63XeHSjNK6xpDrkeZfW7JknjKLYkkT6TLmM0RMJ44UZ4CzVmF26THILHm46HvF7r/u/2LqeyU3cH
+OHIzbNb3pEjwsKK6d6ihmryMPlMPxVD6mKAAAAAAAAOae3/Q2a9yOzaTV2DRUuSrHiVkNs+2a63F
+sXSok2WQ2nDjJqZjIMktNErzJD6kNp/SM0zVjtcy8zW+A35hvx/qGH+urrfy/wBTeR3czXrccecb
+3IjPjuPclVHkExnSWqqLSOr8L1bjUmxnU2F0canjT7eU7LsJymzW7JmyXHXXCZKTKdWtLLZk0wlR
+IbIkpIh9Dxo7USI3Ea8RvQfnzzZmOVnDMkzMsxttqbMeqdqoop3KKN/xKKadRy+OYgAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPG435ieOT
+SZeJGXuP4+0vEAaeO+z00qXcH3ptTRcKqxbav6+df40hDNfjuwFJbecedbJpCY9RmEx00l80ZExK
+VwT3So/NKj5lyfHuaLOh0f7ht+ufbPu0+9veOrF5rLGeXJEzJfgULvb7sbe8ne8NtPI2J4JG/vaO
+6xi6tMaySqn0V/RT5FbcU1pGXEsaydGWaHo0uM59tp1Jlz70qSZGk1EZGMKy4kyA90N5vhqezNgz
+FYc1Whq/ZbkNybO433jtHgd+fJHETIAAAAB+pwnCsq2Pl+O4Hg9NKyDLcps2aulqoqUmp990zN11
+9S1JbZhw2EqeedWZIaZQpRn4DtQIE26TW4UJsqucs75ayBluTmvMshuPbYTe+u/431KPLWv5yXR2
+Y9p2Mdqms42Mw1MW2cXqGJ+xcw8jokXl2gjQ1DgqcNS4uP0rRm1EZ8OouXVl1rPj6CsVnZs0Pg/z
+B4B9efXRfuu/O0i/3Fytu1tOVURo3iNNfNv166l+AzOSkk+wTZhouAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB43EEtPSaUqSfgolF7S9
+5EfJcADX73odhuAd1FO9ew1RML2/VwTRRZxHipNFq3HQtUagy1ltbZ2VO48rgnvGTF56kKNJG2dd
+vmW4V7Y4TneSPLPorqF94/OHUhd9yNW5Nym65Txolarupy1s+TX85Fq2tqfP9J5tba92Zj0rG8nq
+HDJTLyVrgWcJR/6vcUVh0IYt6WYRfqpDXKTP7KulZKSWC7nZ5tlf6FN1+JV9Q9vOrnrSyf1q2BvM
++U5FDsR3d4lG96GvyK6NdFfaOORHGRQAPZiRJc+ZDr4MWTOnWMyNXwIMRlyRKnTpjpMRIUWO0SnX
+5Ut9RIbQkjNSj4HYjxHpUxtlPvCMus63Wm0SLxcHG49vjt11u117KKfDJTHp39kUftsxE88zqFGk
+7pzavbK0WskvFg2PyEtPs4hBUo1pTZdfB2Uhsy81wibSZob5VnLK2WGrCzx3fWlRd48Nfek94qX1
+1Zj9nWrFjJdv7xhrHvXq00K9X2qvEpXnNnxJSRccF+YW0+US4AAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABatJLSZf5fgAMX+5jtU1d
+3QYYeNbArFN21eTr2K5hUoZYyXFZznSpT0CWpJnIhvrQXzER01MPpLgyJXCijLpaoV5Z6PMbT9vs
+2GSeqzrazj1PZgbv2VX13VcTjML6F79ujVjht1oRTe5Tte2l2tZmnFNi13zNXZPPpxDOKtl48by6
+GwRLM4zi+oq62joV+vhOqJ1v2l1I4WeEL5lyZa0r43q3Ke5XUb1+5N677M3ItDlDGZW2/wBTErqw
+rSvxtxPGoXYpjitaUJNajJKUkZmZnwRERGozMz+CSMxWm/OajOdbitsuOveb4ZIT9MXsSVi8ep7k
+Nv0hJyyZH+Z1ZilpFPrxmrmtGRZfbwJjH+r5FasGSoKC4VEiudZ8OOESMyZSyv0Vn2lN9Z8TmPH/
+AN8f3mXs4SnerLJkhf7ZjufqnqKu9kO0fd0LT91R32Pl1G8ptHQRcnz4cez8PPPtMZDPPk8oAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAoaSMv5QBxVtzUWA7twy117sjG4WS4vcJQciHKJSX4sho+qNY1sto0ya6yiL+00+0pKkH8S
+MyPoTIbNwZ4LuosOVM1X/It6bzNlmS7GvDVaLTVQq/EqbUXaimpLR3pI1eAdwUvLdgZFX5zqLE3o
+d1r2jkp/74u7cnFuRmM5ieSURULG1tJWXlqNM97oUaUJSts6tbclQ4Vzcmrpp8Sj6T7T6yvfhzBn
+LquYytaY7sHM8lOFMkU1d5VRhpVvbTVX43IbvGUEkjL4cdPhxwXSSeOC8Pd+YXg+CzzgAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAcEftLkAU4I/aRH+QgBUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWqV08eHPIA8CXkrV0kaT9vik0mXgX4DPg+fd4
+DXHSaeco9IeyNDUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAALVHwXPJF+P/0kAMP+8XurxjtX1bNy+ebFjl9sp+n19ipvEl3I
+sjVHW42p8kmbrNFTpMn5zvgRNp6En5i0EIPMN3Sw2xybX9nnMw9SPU3mDrozvHy3ad9u20edlO4d
+62ztXe8qrVQhrD9KruyyrMdt7S1rtfL5l3c7Omztn45KtJKlI/aaKgmsno6ltwzTBhPU5MvR4jZp
+bbagK6E89XNTyRmKZdnnWpnj+AfXHvpe73YOr/LFlzJk2Jw7dFbpiSVp8r7p6v6y6aaquWo39NuJ
+dLqSZGnw4Mi4GSDzmPIAAAAAAAAAAAAAAAAAAs6y5MuS8OPeXvHHxO0a4FxKIz4I/EchoDURHx/A
+gBTqL4l4/hHHxO0a4Fw5DQAAAAApyXs5AFOoviX5yHHxO0a4Fw5DQAAAAAtNZF4GOPido1wK8kR8
+H4fwP/MOQ0KgAAHJF7T4AFhrL3eP+T+QAXkZH7AAAAAAAAFDURe8AWm4kvaZfnHHxO0a4F/JH7D5
+HIaAAAAAAAU5L4l+cgA6kl7/AOX+IAVAAAAAAAAAAAAz48TAHFe2tq4VpnAMk2Nnto3VY3i8Bc2a
+6pRKkzHVKJuHV1zBfbl2lpLcQyw0kjNTiy9hcmXVly2ILavurobJ3KmWLxnLMMfLFiarkXOS7TRQ
+icq+NVyU07VIeXcz3EZj3QbVtdl5apyFF6XazDcZbcNUPEMWJz/VKuMZfq3Z8gkk7OfIi8+SZn4J
+JKSwLme/PXqXgi/pPIPfrqE6lrR1JZJoy9BwW7vt0OSntzv63fHb3vITxKTjvWGw77UmxcL2bjLq
+27rCMhrr2I2hfllNZivF8/WOHz0qZtK1T0dZHynpcMz9giLVNetMxt5n8QvHWjku2dZORbjk240b
+7MyPVS39VxKMaP3aybNrbOKPZWEYxn+MSUS8ey+jrL+oeS4SzKHZxGpCWXDQpSSfjKX5ThEZ9LiF
+F7h9LMPsyWW3mtrZ+ca/2Kbla9y8u3KhW7hDkVsuUrsroqWn90/fjlIkAAAAAAAAAAAAAAAof4C5
+/AAIt/rt983dn2o9wekcS7et03msscyvTlrkuQ1VXR4nasWV9HzadVs2K3MjoreQw4iA2lrpbWhs
+0pIzTz4i45VtMO4suuP0Y4Lo+JCHusl+OiKxyGRPoId2/cd3ZYV3MWvcVtS02jY4Lm2vanE5dpT4
+3ULpoFxjNxNtYzSMbpqdqQmZLjNrUbqXFJNPCTIvAdbNlth22W21D8GtvE3WiS7LY4z2vH6TZN6j
+E3dlF2a74zPt3zO6wTbmvsLe2FjNzRQqaymPx8LlMZBkdQuvvoU+ukx7XGIk1oyNvrSs0qSfJERw
+NvRlZbbD/oK6yTcr4bVdXaIYOs/Wr9QjHtha5yTOO43IMvwaqzTE7XM8VnYtr1iDkOIMXcJ3JaeT
+KrMPh2bLc6kJ5JOMOtrSo0mSi9oybNypaEZdRmhcUb8rUV1u5vq9guJ2BlPZQ7esr7WufTLrrSBE
+sq+WkyUmTBnMIlRHkqLklJdjvJURl4eIxNgjaaSy6z6g3AAAAI2Hrw+oTvLtZyXQequ2zaEvW+bZ
+DWZVsHYE+rrccuJjuKFIiY7iFZJjZBU3LcJmfax7J9K0ttrcOLwSukjI7blOxs3VXHZfq6ERc7g7
+EwbaTFTSjor1oe/Kk3fqC12z3HZBlurYuycPLY+M2GL68hwrfB5N3Ei5Oy/Lr8Tgz45R6h914lsu
+trSpoj6uCPmyXDLFuphOOsUKjyau0dSNcX1ewexwJ+cOQxKjMSYrqJEWQw0/FkNLS41IjvIJxl5t
+aTNK23W1EpJl7SMjGLVx39OvAsFJ7Q1NwAA/AjP4ACLT653qQdxHbfvvUWme2fb87Wkuv1vZ5xs1
+dTVYtbv2UrKrxEDDq+Y3kdNcnF+76yhlyCNom+pMxJq6vs8XPK9mhy2nX5tG+iLoIO63B2LoZ1n3
+fQp7pe93u+2zu3Jt971ybP8AVWrMJoaiJRWGOYbUVkvPs4tnZNdJXNosaqprsikx3GpijZJ40F86
+2paT5Tx182QrbAVtIdG4q6dPZ2zsWt559nF/WSeS8SI/iKoSgAGI3fT3L1PaN2rbi3vYKjLscQxW
+THw6vkrNCbnP79bVJhFSRJSta0SchnMKeIiM0x0OK9iTMdy2w6p0ttinWq/IdeXISKyr1WpCDAfr
+Eepw4ytv/m3y1D7jaiJ1GF6uJKHTLkjbSrCFcISovAj5Pjw5GT/7VtPR8N1eP5Wz4iu0XZ7Di+KT
+i+wHufqu77tO0/vGHIirvL/HGafP4MZ1Lh02ycZIqbNax5KW2TZNVxFXJZSaE8xpLSi5SojGLbnC
+egXFxirYpZY76SWUeQzNHWOUAAAAAjbevZ3m90HadknbBF7ddvW+ro+d0m3ZOXNVlNi1ui7exqdr
+xqlceLJKS4+XOC3dyiLyTb6idPq54Txbsp2yHdVd6ZQuDZG3KS8y1RweU0U649bL1E8L2BhuXZdv
+i52jiuPZBX2OTa4ucY1/WVea480+lNzj8ixqMUgWNa/OgqWUeSy6lUd8kLPlJGk7RJyrbejucChe
+PhoIqi7vNv7q4qTt+33emu+5PUGB7t1ZcIu8J2DRRruqkH0JmwXV9TNjRXEdCl/JXtBYtOw5jBn1
+NSGVF4lwZ4sfjuxnVYe10Flpc4iYoc0DYbgAAAACPN693d53J9pdD2wz+3Xa9vrCVnmQbUhZa5W1
+GM25XMagqMPkU7TycjpbhDBQX7J9STZJs1eYZK6uC4tWU7dCuExxmXRvphiR1wkPRkThHDfoQd8H
+dd3W7l3/AI33D7mutn0uIa0w26xuvs6XFKlmrtbLL5tfOmNrxyhp3X3JENpLZk6paSIvAiM+Rz5p
+tcS18NYlC0JXy6TbbpjspF4iYaCT6KcSYAAAAAAAAPh4fjP4AD5VpYQqqDLsrCUxCgQYz02dMlOt
+sRYcSK0t9+TIedNLbDDDKDUpRnwRENK6txOJoNzTMiU7RGjU1uP117tNNOmqqqrVSicpE+9QPvLm
+9z2wFY1iM2UxpbB7CQnGY3UttGX3TfXFk5tOa5JRsrLqRWNLJKmYyjWZEt0+nCOccyu3OZ0CP6u3
+8p7Ye6J7ucTquy83nTMjSOZ6uDe9SlVPqzdXg0/mLtq1GvUUc+2QfH4/4eI43Nhs4iNei1kif0dd
++/tBr3LNA3co13OvJisnxEnlo5kYZkMpfz0KOnq6/Kor5SjPw4SiYn3FwM15AuvS4Ps53wmjxy9/
+zqu/tfP0frBtzeFmu7eDq0/+zRr3uTfT/tN26FdSSP8AOMgHwIXAAAAAAAAAAAAAAAACGB9TB/im
+7cP/AOv95/xFsRkPJHqz/wC2hXr14TfMZVfTFf7u+8b95Gqf7IX46me/Xo/5X0HLl/1T4ST/AHVX
+Buqqwp7OM1Nq7aFLq7KG+hLjEqvsY7kObGebWRpcafivLQoj8DJRkKKlODqO8hOYb+g6v7uV01L0
+B3B7t0XZMuoPWOysvw+KbyFoOTQQ7aQeNTEErjrZscadiPoURERodSfjzyecrY+1PhNvJr4ZSpOL
+K8BfCJ8/pEb0c3/6f/b3lM+Yc3IsRxZWpMreWvzHF3+rZDuJlIddM1KcXY0kGFK6jPlXn88ePJ4l
+v0PoFydYXlx+P/EtFvdR2GiqbMBEndAA8bijSnwLkz56S9nJ8ckXj4cmAOum9XbeyN/eoJ3C5RDl
+HJx7Bb2Lp3FlIcJ2Oqn1jGVRz3IppPgmpuXrtJBH7T87kvAZfy1DWDZm1X70p9xcSVNwTUYAZlhO
+RYTZfs1mVTKprKdj2NZGmBKQpDr1BmuN12UY3YoM/BTFpQXLEhsy5IiXx7SMinKK2ZTLnA9X8A6z
+ja/Cdih6V2+D7iewzt2z2VJKRf1eDx9c5f1OE7JRles3nsJsnZZkRcP2TNOzN8SIzTJIz9vIwpdo
+yxLk4zsxxLhEc4jFC7cDYYI87IAFilF4F1F4nx4eJnyZF4fnAHWy+pZvAu4bvu7mNkxpiJ1GjZFl
+gOJPtGRsrxTWKGsEp32DJxwvLsPuRyVyXCTN/ngj5IZly7EWLZm2l1+GVCdhKeXDUS6vQN0arUnY
+Dh+X2EZLF/v3Ksm25NUpp1En7hlPt4xhceQpxR+Yksex5ElBp4I0y+S8D5PG+ZZNMu6OcL0CaPmJ
+61NcKEi8puzEESJao+kuRxubDVCHp9R/3VftPsPVnaDjVi4VZryIjbO0GI76vIlZXkkWRXYDTTW0
+PGhb9HjipU80rRyhVkyoj5LwyJke3afaa7PAK9e5KYdE2miWP2qbOe7QJvegiCf92ULebOknU+U4
+p45D2PlZnliXCbQn7hbv3Gac3eno+fd6CV1F42127sLePZe3WRPQ3uh8Z03gfTld2JYbt3ZPaNlF
+mluj2vAe2ZrBl511SGNg4pXIj5jTMNqcJpheR4dERLSRJLzHKhfiZqIhWM623Btu5spoXRWS1jfV
+tOhu6yZKlRKLkvzfAY5LAXAAALFnwgzL4ACIz9Tqf/ivsy/q7vhP5Ts9Tlz/AJBeskekf+D51K7f
+181RzkZGuwnKrbD8oz+tppc3EMIt8Tpctuo6ScjY/OzdV0jFis0pM3WI1zIx6Uy08afLJ9KGzMlO
+II8guSGGXm2cf1LpER23tZup9ET1FFdqO4C7fdpXSm9BbxyKIzDsbGUaYOsdr2Pk1lVkylOuIYh4
+xlpEzAtjIkpZdTGlKMibeNVPzbY1kNdOj+schKW6bw3uApOrQslF7SM/H3kfvMvdyXiRDGhZS8AA
+AAEVX6nb+i/ZmX/xXur+Ytfi7ZK0SHfy+6QN89E1z91DgD6Zr/ED3RfufwD+3c8SGefQxvtmyxfe
+c/dJlIxyWEAAAAAAAAPE66ltKjM/EiMyL3nxx4F7fE+QBHq9UrvdO8kWfbHqu3UdTFeNjcOR1z60
+ospaDQtOvoMllz7caKpKV2yiNSXVmmOR8JdI8W50zYlH+2Qtfjnpp7lPu1LNrb63M7tN9Fod/Qx6
+6dNVX/sVoupE8Tl1mjgvAiLw8PZwXAxUeq4AAAZDdq27pnbzvnXu0GnHiqKu3bq8wispStc/DbtT
+cK/YJtXBLcYYNMhv3k4yky8RP5WuPsy8tuIv6dfDMG+8X1YM9a3VRdMu0t0OXJiit+NhrpkN99Su
+PIqY4oTRKmxhWkCHPr5LUqFPiRp0OSyolsyYstpL8d9pZcpW080slJMj8SMfRO+ji47D89LzD8d2
+uNK0SG69yr9unwk+A+uNDYAAAAAAAAAAAAAAAQv/AKmH/FP24/uAu/8AiNZDIeSfV5PwEDedSc3d
+MrPpif8Ad33i/vI1R/Y+/HSzv/UW/wAvuILB6ovP9JKUFJJ4g7fUSaMLXfeZiu4q6ucjU3cBraDL
+spTcfoivZxrZ1nFbc1LQXQc2RjL9Q6v2GaS6j8eTGSMly+JCcZ5HPkKxeGsHuMZn/TPbx82s7kO2
+uxmmtdZOx7deJRFvLWRRLVBYbnKWULV5bSGZ8KodMkEXKpJmfIjs8x/1DczlO1Z9TjK6iV0XiRH8
+RSCdAAx77rNzwu3btx3bu6a42gtZayy/K4aXPL4kXECpkFQQkk6pDanJ9+7FYSkzLqU4RF4mOzAj
+LKmNxE1uV904n3EaaWrkQ613Sutb7uI3rq3U5vSZuRbr2rjeK2U9Bmchx/N8mYLJrdxXH2CjRJkq
+W44ZkSCQavbzxmSW/wBAtrj2xtvdKdHc407BNZvR+op7bKrVW5e3rbuJVzVbieb6rb0/KYZWbhR7
+jTZss420aenqJTuEXbDBGZmZpgfAhV8nTeKw5CqX7zf7PlO/faOGiVJtT5v8DKn6aLeypGPdx3bZ
+aWTil0l1j26MPgOuJNDdfkbCMPzP5VCjNwkIsqerecSn7CXJJq9qzM47O0JG5lEtrxjtWKWjrHC2
+oSrBSydAAxa7193Ru3HtR39ux95LD+AawyaypzNflqeyebBXTYnEaVyX66Zk1nEaR/1lDngMdKuT
+TG1VON7Qyp1puB4ZkW0M5wrX9IblhlOyMxx/EKxRJedlTL/MLmJUNSjSlCnTW/OsPPdV4nwSj9xm
+M3PudAhuf6bZUI/plO0X1bgFHqnXOCazxmO3Fx3XmG41g9HHaQTbbVVi1NBpISUoLwIzYhEo/eal
+GZ+IwVW6jzzjvLWXKnQ3gcgAanG+3Nl4pprWWe7Vzme3W4frrEL7MskmLcQ2bdTj9e/Yym2TcNKV
+S5SWCaZRyRrdcSkvEyG9htXHaGadaqbHK0bbWpdR1mO1dhbD7re4PM9izoMm32XvraEmbX0cYlvO
+qu8xuWazFMVgNGov1daw9CrWGyMiJLKfZ7s0xm2YFt0Lw47bekpNS9LfVV01E/Ou9PzB4/ptp7C3
+2a84MjSjuHybYkNuNFtSZHPIXc7JwmkGp9jZq/vBKySSzSgk8jEldyd9p9PTXxPkLb0ZOi8BdeHZ
+2chAA13m2xe1rfmL5zXR3afa2gNox50uteb8pSMjwbIFRMioJZOcKODaIhyoL5GRmth1ZH7TGXpT
+TV0tmH4jZVHHeivY7WzszdKbZxXeuqdebgwiQmTiOzMPoM0oHettbrcK9rmJnyUvyjU2mfWvrXGk
+JI/sPtKSfiQwo807GeVpzWi4cxc2HOMzQ8mpUOVRxnIABY74oV+T/IZGAIjX1OvjlvZj/V/fB/8A
+2pqcxesj+DI7Nqlevupvn+g4o+nz1HgO+avv/wBPbPoGMmwPYetdQ41ktO/wlT8GZdbFNMmG9wpU
+SzrJSG5UR9JdceUy24kyUkhy50ddaWM+1jim9h/09w1s2DquYmmvvX7Rs87Ju4TM9DZ6S7CLXL++
+8By5LC2Ieea8tX5BUGTRuS6EyyJlcSwZQpXy1jGebL7PQZ2213SPdoWLurh+B29pGTaHoj5LF9DH
+1Gv+Y/VzfbDtq/af3rpXH2CxmzsZi12Gz9TV6I1fX2xuyT65+U4UpbUCzJPK3YpxpR8qU8ZY3zNa
+0hvrLZb/AErnzk7aJvS2fO60JBiVpV7D58OT/AK2SxcAAAiqfU7/ANGOzL+te6v5h1+Lnkz1h38s
+gb56Frn7pwD9M1/iB7o/3P6//t3YCTzz6GL9s47F95z90mUjHJYgAAAAAALHFElJn+T4fl/IANVP
+qRd7iNAYg7q7XVig90ZvVKNMthaFKwDF5nWy7kTxmXS1eTUIUisQfilZG+ZdKEkqn5uzG1ZYW424
+nT11UbT6790/3eJHXDmpu9XptUyLCdprdq/9iun7tPq+WqcxF5Upxxa3HXnn3XVqddekOKdfeecU
+a3n3nl8uOvPvKUtalGZmpXJnyMEOuvuv8d89yYsSBCjtQIDTbURpNxmijwaKE8QtA5wAAAosuUqL
+jnnwPw9x+0vw8kBt0IvnfV18PmJT3pYb8/vc7dYGGW80pGX6ZktYXPJ1ZKkTMYU2t7DLBXPioiqk
+KhqUfH24Z/EhnzKF0S42ZtXvWG9B4Qe+H1Tr1a9bD0uG2qZeu+9JYXxd6tfO0cmivvvtYG0QWs+V
+QAAAAAAAAAAAAAACF/8AUw/4p+3H9wF3/wARrEZDyT6vJ+Agbz4Kc3dMrPpif93feL+8jVH9j78d
+LO/9Rb/L7iCweqLz/SSlBSSeNCf1DejE7M7II+0oEQ3r7t42HR5ochBGpTWF5WZYPmDRkSFGTLbt
+tXzHFcklJQ+TPjkjseUZnRbxwdjiEXdG95jAjWejdvA9E+ofomfLlKj4/s2faaTyU/O8qP8ALbEj
+IiY+7J5WTZtx80hVivtcknnn3eN6zbH6dZ61T7sirc5wnm+RdB2HjZmafH2+JH+QzL+QYeb2lqUv
+PwIz+A5DQjxfUb7yVg3aFg+la6auNc762fXpmtsuJSTuE6xQxlV0mQkuXCYeyV+mR/oq8SPkuRaM
+nQ1dunG/D0kXd68I+CGnH6fDRqdmd8svaVhCKTR9veurvJ2nnEJU0nMc4NWFYuX20q/WNVsm3fT7
+FE5HSr3eNmztM4bHAZ+87hE2Vrz2PIhIM9d/RKdw+n3n+Rw4ZyMj0RkGObkqFNJI3yq6iSqhzVol
++0mv2Pvpck/+vFQZ/oimZZkrFujeOp1e+Ju5tI7HXbh/l9BFU9HjeX9wvqHaBuJcwomObItbLSuV
+mpbbTS4eyIhVtEqQ879lDMLNo9U8oyNJ8J9vHJHkPN8ZmVbXFZ1ouJWbSqsze0diO2Zmnx9pGZH+
+MvaMQl1LwBHW+o93YrCu07XOl4EvyrPeW0ocm1YQpJuOYZq+GeR2JKa48wkPZVOp0kfKSPpMvHxI
+W7J0Tj3TjYaG0Iu7yOCx8Jo39CTRbO5/UHwfILCG7KotBYxkW4Zx9Rttt3cRprFcJS9ySiWf37kf
+zTaOSM1QjP2JMWnOsxGoXBZ08UjLOquv4u6yfgkukiIYoLOVAEaj6jTuwLB9J4H2nYxZGxke77NG
+X7BTGkIJ+Nq7CrBp2BVymC5eJjLszaZ4V9gltVT6eTIzIXDJ9u407pb3gtkNd5KNU8HaalvQQ7XE
+7070Gdr5BWqlYR2y0qM6fN+OpcKZsi+XLpdcwuvlJLkVhon23TwoiXBbM+OS5sGbrgrMLoVK6XPm
+OjZ46uPcZPVyd10F5XT4eznngvA/byX4SGLyzkFb1/e11eku8lrclHBUzhHczRnla3W09MaNs3F2
+odLnkMiTz5TttDOutOn2LdlSFF7FDJ+S7orkfoi6X2/mKxeIrKPcZdptA+nH7rU5bqXYfaHkllzf
+agsXti66akyEG7L1rmVgo8gqojavtmjFc2eW8syNXCLdHsJJCvZwt6xZHTPFcO3ZJnFp4Ka0JNxe
+wufgKiThUAWOfoK/EAIjX1Ov9K+zH/YO+P511ML1kb07vN9JXb/6FvnPR+mOP/x33il8MV0p/Pmx
+xy54/l/t/wAJty/958BuX9Wj0/Kvvo7fJDOLwoMTfuq0WeUaevHG0NrtZC45LvNb2MxSk+XTZuzG
+bbaUszbiWTceRx0pcJVXy/dVtU3TpjOa/wDDu/4EzNjI6zhtIGmq9n7T7adyYvtDB5NhhO1tSZd8
+20zNYkwJkG2ppjkG/wATyarWpt1ddZMok1tnDdLhxh1xHt4Msr1sMXqFu4aCntUvxH+Cdjl2T922
+vu9Pt+wveeBOtwzu4/3ZmGIuSWpNpgOdVrTbeR4fbG3wo3K+UfmRXlJSUyC6xISRJcIiw3coD9sm
+OR3tng9su0d5HmkqMuB1TlAAiqfU7/0Y7Mv617q/mHX4ueTPWHfyyBvnoWufunAP0zX+IHuj/c/r
+/wDt3YCTzz6GL9s47F95z90mUjHJYgAAAAAfgRn8ABiX3h9zVD2safs9g2cRVvdzZJY7hdAlDhou
+ssnRZD0BiW+2XEauhsx3JMlZmRmyyaEfrFJEZdrmxZ7esx9dKd7T+3s+Yyv1J9Vt2648/wAbJtrr
+Shqpd+RX+GzT4a08tWGoh+5vnGV7Ky/Ic9zi2kXuV5TZPWt1ZyT+0/JdPhtllBGaY8GDHShiOyX2
+WWG0pL2D54uUx64zXJz/AKwfoIyTkvL/AFdZejZRyy223aY7e5StH3i7XK/rKflR0i2YYaigAAAA
+AAzt9OrfR6J7l8YXYzSh4bs42NeZfyafLbVbymyxi1V5i0p5qr820moyNSWJDv4xbck3RYF4ooe9
+XdPkP3zOqqrrA6pH7lBTG82Reltfl0+mox+tRpJeCVe4zT7/AGK544+Iz0eGB5AAAAAAAAAAAAAA
+AQv/AKmH/FP24/uAu/8AiNYjIeSfV5PwEDefBTm7plZ9MT/u77xf3kao/sffjpZ3/qLf5fcQWD1R
+ef6SUoKSTxw9v7VNRvHSm2NO3bbS63Z+u8vwaQp5JrQwvJKSXWxZfBGkyVBmOtvJMjLhTZHz4Dlj
+1qw/Q+mhaF+TQbXKEdaVF2odYG43lurc0cjqN6pzzVuZuIUfWtmRW5hgWQkgjSvg1NvRryn8FGf2
+S8fgM30fqrYrO1xspePRXfPHZ+6C2rU7y0rqncdItpdZs/XmIZxGJkyUhg8jpIdlIickpXC4Ut9x
+lSTPlK2zI/Ehg59hYz9bS7HC60rjRj2jl5R8JM/gNhqQTvqC96HtHvqb1pXTEyMf7etd0WGqjtrS
+4yjMsw6M2yt8jT+i+UCdVxHSPnhUT3cGMoZKj8K3OSKtbilVvO867g0vozdD9OnogtfdnmWbnnRF
+s3PcFsqysYby0o6l4PrslYjjxIX9ozafvjuZHuIydSfu5Oq5tlrJufBTU2nZ3CTsjSNw95ddZvb2
+RhFFs3AM11xk7PzON5/iORYZfMf/ACtRlFRLpLBJGfHCvlZyuD9xir0OK2828nKStaY0KnaOryzL
+Fss0XtHKsMkOv1edab2Lb0ZPGRtuRcn13lD0aFNQRkgy4m1Db6DTwZ9RK95DN7CJOttHK42Ufh8K
+ZjsOzT7a9v1e/wDQWnd1U621Q9oa3xHMzbbUhaYk66posm1r1KbWtPnVtt57Dhc8pW2ZH4kMLy2F
+iSnGdqOYF4or4jaKc3qV0kZjiNxBS+oR3WnZffbG1vCl+fUaC1ljmKOsoP8AUNZZmhHnGR/Z9hvl
+XWNWy4Zc8Gx0+1JjJmSYSJDWY7oRwrN6XjeZTWbWvptNFqxft73H3A2URKLDcGxI2H4/JdSSnTw3
+V8R9h9UZw0JUmPPy6/nJWZH0rOInw+zycJnacjtxbiNfdtncs0d1pjGrl7O4SVRTiaPSnzoldEkT
+ZshqLDiR35UyU8tLbMWLGaW/JkPOKMkoaZYbUpRn4EkjMxrTTxEB1rfqG91DneH3dbd3omStzDZd
+srE9atuKeS3B1hhhSqrFnEMvmRsKvWUP27yCSgifsF+HIzNYILVvtaY618MpVxr6U9xsdCeATOPR
+P7WUdtHY7gsq6r3YWwt5uI3XnJSmkMzYqcngxmsLonkJWs2yp8KiQlGg+DTIkvclyZjF99m9Lubm
+nQ3oLJa46xY+G1ezs5zbyIgkTUd61Haujub7Gdiu09YqfsLSJHurX/yzSFzn38Rgy/2xpGFdKnVl
+kODyJ7ZNp48yQ0yfgaSMpvLs3oF0bVV0Od78Z0rhH4zC4a00kKrsK7npnaH3Yaa3yxKkFjFPfR6H
+Y0OKs0fe+sstJNPl7C+pLqXCgwpKbFpJl/7eC0ZfaIjLJN/h+04TjLOlU78qluceizW0U7LWqsoN
+tXQ7OslMTq6wiRp9fNjOE7HmQJzKJUOWw6n7LjMmM6laDLwNKiGHHO8TFS7U1759EaG4sc/QV+IA
+RGvqdf6V9mP+wd8fzrqYXrI3p3eb6Su3/wBC3znofTHf077xv6q6S/nvYw5c8a4/2/4TTLupzs8o
+l7GXJcCgFjIg3r9+nc5i13M77dP0shdFkEqDA7jaKriGtunvXuiuo9tNNMpPyYV8tLNfdGSfLall
+Hkq4899YvWUb3TxPZcvWngEJdIWK8dMDWF6TvqBWHYl3AsvZTYz19vu2JFfj236VtK5TVE55hRMb
+2fXw0dKin4e7IUU0kF1yalx5v7TiGOmezVamp0TpCestkfCm8F/gLtOwjqLWBc1sC2q5sWyqrSHG
+squygyGZcGxrpzCJUGfClMKWzJiTIzqXG3EmZLQojLwMhiaqnh6U1lsPqDU0Iqn1O/8ARjsy/rXu
+r+Ydfi55M9Yd/LIG+eha5+6cA/TNf4ge6P8Ac/r/APt3YCTzz6GL9s47F95z90mUjHJYgAAAAAAN
+X3q44wd52e3ds2y2t3DM7wfJTUs+OiO5Yu4/JNJ9SeTNF4XxM+PDxFTzo3xbBI/092v4j629yS9p
+ZveBtjSr5mbHkR/36N7+AiwfD+T2fkGB0c4vnkPdRERNCFBsNQAAAAAAKn18fq1uIcIyU2tpam3E
+LSfUlxDifFDjavFJl4krjjxG9tzgrx0OCVGjzITsGQ1xYzqLRX+xXorJiHYpv1ruH7dcHzGdIbfy
+6mhpw7PUEny1t5VjzMeLIlrbUXX5dzCUzNQfvJ8y9xj6Ly9cPatnbkJhxtp+eT3herGrqo62bllq
+nTald4sSvYrD3f0089C94vbQzQEyYWAAAAAAAAAAAAACF/8AUw/4p+3H9wF3/wARrEZDyT6vJ+Ag
+bz4Kc3dMrPpif93feL+8jVH9j78dLO/9Rb/L7iCweqLz/SSlBSSeLVlyk/cZeJH8DLxIAdex602i
+v7ivUN3SqJEOJjm4yqd5UBkTSWXXM0jG1lyGW2ySTflZxV2CjSaSPhwlHyauRl7J8pZVrwX7oqN1
+Y4c3HYpJO+nw3j/eb2IRdcTJXzFxoDYWVYEaFmo3m8Wvnv26xJxfV4mgmr+VFT4ESSidPiZGKHmu
+P0S6K6nguaez5Cctj6OsfsG7nKsiqsTxy9ym9koh0eNU9nkFzLcWhtqNVU0CRZ2EhxbhoQSGYkVa
+uTUki48TFfoo4mgkK60bb4uxDq+dtbCyruO3rsfZjsZ6fme8Np3+QwYXRw/Kss2yBxGOVLaCWpDZ
+R48yJDbSk+lKG0+IzZFaatdsRPw2yirU/Lm4fy7p2V3a/pus7eu3jS+kKlppmLq/W+J4g8bPR0SL
+WsqI6byd9gkka7C6XIfUrjlSnDP38jCkh7pEhx1fCVS7sNcFlGuRDnZxJKSZH8BwObDmQgNevFo0
+9P8AqA5flkOKmPj/AHA4pj22Kzy08Nnex2P2Mzlsz48HFXWOImqL2n88SveZjLmSpiP23gva2iq3
+RndmcbtG+j6dfex7D7Lr7T9nNVIu+3rZVzRQ2XXW1LbwfPevNcZU0lJmsorFtOtYqD46SKP0l7OC
+p2c4yRLrxWU/TuExa3OLH7ePyG+y6toFDVWN1ayGodVUV861spj60tsRIFbFdmzZL61mlCGmIzCl
+KUZkREXiKpucR2hpNqkkdXr3C7ZtN+b43JumSb02z2ts3LMuiRyWt5w4t5dyf2aqYprM3HGolOUW
+KwRGZdCEkn3EM6Qo7cC2tsrrbbKNJdedmnY09i2ime2rtH0DpQmVMWOEa1x9rJCW2hDj2ZXUUskz
+OS6SUp5W9lNzL9vJkkiLnwGFrlIWVNckbFWoucdvgso0ZbDgOU0yeuT3YudtfZVkeLY1YHE2R3Dz
+ZGn8WUy641NrcdsoJv7IySM4yZOtKrMTUuI24Sk9EqwZP2iby9Aqm3JPIo0kdc3+DDVdpDw9Ojtg
+X3b94eltJOQfmcNfvSzDZafLUphnWWEqYuMpjPOEg0tFeNts1TZq8DdnoL2mQyZmOWzb7W4qesOd
+4QsCP0l/HYdk7BixoMViJFZYiRo8dhiPEjobaYix2GkssR2G2yShthlpBIQkiIkpSREMMdvaWs9z
+kviX5yAHryWY8ppbMhDbzDiFtvMupS40806k23WnW1cocadaUaVJURkZHwZDRHETSi6RgdbN6jvb
+G/2k94269Porzi4e7kL+cazVwRx5uuM7cevMfYYPzHFLKkcfkVbvV0qS5AV9kk8GeYctzVn23H8P
+WUa4UPRJvNqJd3oR91qu4XstpcAyO2Ox2L222EbVV85Ieefm2GHFEOfrK5kOvqUp8zxsjrFLIzI3
+atXPj4DHeZresW5q7o3XO/LTa3uLDTlN2ggyQLHP0FfiAERr6nX+lfZj/sHfH866mF6yN6d3m+kr
+t/8AQt856H0x39O+8b+qukv572MOXPGuP9v+E0y7qc7PKJexDHje0sin5bN8PxrYOJZHg+ZUsDI8
+Ry2kssdyagtGUvwLijuIjkGxr5TSiMlMyYrykmZcKTzykyURGW7iutVI814SfGabNJ11HqSdjOTd
+h3cXc67dasLHVWXfPZRpLMLA0PqvcL+ZS3IorOWkkNqyjCn5CYU9JpQb6PJkpT0SC4zJYLmxdYe8
+96Wjw6CkXGG8zI42nA3t+gL6jCryri9im37xxy9x2DLn9ul9Zul/3vi8FDku61S9NfeNx+0xhsnJ
+dMg+VOVpOxyMiitJOpZvs6USPaLDapGJWzzXa3VZf17Po7O6SpEKJSS4/F+YUosRFW+p3/ox2Zf1
+r3V/MOvxc8mesO/lkDfPQtc/dOAfpmv8QPdH+5/X/wDbuwEnnn0MX7Zx2L7zn7pMpGOSxAAAAAAA
+Yqd7eInnHafv3H0Mm++9rTJLKG2k/H5ugiHfxlJ+0giWl6sIkmZkRGfj4ciJvkdHbNIa2q1UZQ6k
+b7/bfW7l69bGrqxj+zXXTQv/AHEMdtRKQlRGSutKVEZFxyRkRkf5SMfNTTfCTgn6OlThNqi/t/vd
++hcOQ1AAAAAAAqANr3pJb8VrnelpqS6nJbxncsFtFcTzi0sw85oGX5Natpvk2UKvKxT8dRmRGa22
+i5PwGROr65pHmOQZH3mo8+Pf36qvb2R4nWJa2v19sdqbc3UTeWPXtr/YrJPzazX7SIvAZjPHs8gA
+AAAAAAAAAAACF/8AUw/4p+3H9wF3/wARrEZDyT6vJ+Agbz4Kc3dMrPpif93feL+8jVH9j78dLO/9
+Rb/L7iCweqLz/SSlBSSeKK9h/iP+IARcvqWdDFZ667fe5SujKXMwnKrjUmUvtpIjOizqIeRYzJkK
+T+sUmvyLHZDKC4Ug1WHiRHwYumSpnCluQvxCLuiJwcdphV9OJu8sJ7rtqaSsZJt1m69XldVLC1eD
+mX6tnvWTCfFZIJUjFchs/Hg1H8ukuS4ErnmA8kNuWqaG68CLsVaUOrRsVDfj62u9j0h6eO4018tU
+fJtvpqtKY55ThE6k87edTkr/AEkpLnQ1hNbZ8KT4ktSS94pmWo6z7m0nik1PcRthSJD6P+iE779Q
+fQFFLjefjmu7iXujKUEw2+w3B1kw3b0kaahwyQmPY5g5WxzLhRmSz8PDkslZpmJFsnB1ProIK2pi
+/gdia3z0+PiZmZmf4zMYbo2lsUvHIaEbP6kbRBZX236h39WxVLsNMbKXjOQLaT4nh204rUAnn1kg
++GYOYUtalPKkkRyle0zIhbcnSOFcuB4rhEXdtrgcZV1Gq36eneada97lvqawlGzR9wuubShjNKdQ
+0wWba/U9mmOuqNX2lPP0bFvHSkvFaniLgxYs6x+LEafRPR906dmkJxlZ7RJh9YTeatD+np3C5BAm
+OwcjzbHGdR4mth5LEldzsySjG5RxldaHDdiY9InSOEH19LJmXs5KjWWJ0q5tInid+vMS09xGoaqn
+IQp/TH0KnuL76O2/WkmCUvHoWcQ8/wAwiqSlxhGIawbPM7CPJQ4TiHI1jLqIsEyPkuZRFzyZDJuZ
+JiRbY4vl95QVaA2sqajP4Z2SaDM0kZ+0/aMOF2CuSSfBcnx4EXt/J+EAQAPW57rf+ZjvcyrG6K0T
+P1t26xpOosSOK8l2DOySLLTK2ZfsOtOOMSvnMoZKAl1PtZq2+PfzlfKNvWDbekLrd+Mq96VXXd3k
+OI/Tm9QtPp5ZHsrNaXRlHtnNNhU1JjDF9eZtYY1+zGM1kuVZ2NVXRIdHbecu+tFxnX3TWgyTCaR0
+n4mfLerG5eeHuuaDpW24JBx3tOJtd/8AM17KL/8AaNhHj8Nv5Af5/wDwcQgP7Eo/Fq+Ukv7gp5E+
+JR/5m7ZR+3tEwz/83cgP+PDRp/ZCfjr8pt/uDtN/GXF9Tbso+ee0PDPy7dvz/wC1hgf2Qn4/zj+4
+O1Qao/UZ9Q4vUMyHWOY3WiqLU2Ya5p77F13lJmU/KP2lxe3mxLSDU2EadQ0/yyqG1akPRnErXz86
+8Sk/omVlsFjrszypU5voq6kOnKuCXDUiJgcheiz3VI7Ye+HCYd9ZFXa5360xpfNFPvG3Xw7W8nNP
+64v5RuOtxWTqcyS3GU8sj8uJYv8AuMx1s3W/pNt6QnrDanLZZODvAXUdgo2o1J8fAy8DL3kZe3/K
+MTlsKufoK/EAIjX1Ov8ASvsx/wBg74/nXUwvWRvTu830ldv/AKFvnPQ+mO/p33jf1V0l/Pexhy54
+1x/t/wAJpl3U52eUS9iGPG9pZFKn4kZfEchoa/vUf7HcS77e3HINX2HyNTsOiTIyjTGaSWlGrE9g
+R4brMREp1r9aeOZMxzX2jf2knHdJ4km6y0Zd+03J20zaH2dW3tnVltcZnDRvHXiTIez+3/bEmvmp
+vdY7l03nJsPIS45DvcNzrD7Nt1DzLrKkEtUeZHS6ysj8uTHWlX2m3PHMy1s3CFhV5yM4nzlVRvoq
+8ZFVte2dg36Y3fnjvfl261GdPHBqtu4ccTF924fG5ZTSZchg1R7ytjLNThYvmcRv56AojWTRqdjK
+V5sdZDD17tj9rmrHVPMlngyOOzjtNOv1O39GOzL+te6v5h1+J7JnrDv5ZHXz0LfP3TgH6Zr/ABA9
+0f7n9f8A9u7ASmefQxftnHYvvOfukykY5LEAAAAAAB+cyqoZyDHLyhfSSmbumtaZ5JpStJs2sB+C
+6RoUlSV8ofMuDIyP3kY43KFcarY5W1O1b5PQbjHmprakUV/u1opBOsat2js7SkkIU3IpbSxp30LQ
+tCkPVU1+vdJSXUpcJXmRj558OfYRD5kltK084yuttys/TFli6pesrwLymqRDj1/+Kg9IdcnwAAAA
+AAAA+pRXVti9/S5RQy3YF5jdtW31NNZUpt2LaVEtmfBeStBkoiTJjpM+DLkuSHZt0n2fNafZVcSE
+zJl+2Zoy7Oy5dG6HLfNjVs1fb2/ATW+3fb1PvfTuv9sUy0Gxl+PxJthGSs1HWX7BKh5BUuJV9pty
+tuI7zXB+PSkj8S4H0nBl9OitvJoxbPzhdYmS7jkHO9xyldE3ZMGTW3Ts3qU8CtO1VRgpzkO2UwAA
+AAAAAAAAACF/9TD/AIp+3H9wF3/xGsRkPJPq8n4CBvPgpzd0ys+mJ/3d94v7yNUf2Pvx0s7/ANRb
+/L7iCweqLz/SSlBSSeAAwV9SfQRdynZF3EariR0vZDY6+s8jw9fkJkPM5lg3l5ljRRULMiQ/NsaR
+MXqIyUSJCiI/Ex3rXJ6JObex+8OrLYR5hWkIAHZZvBfbz3Wduu7yccjQMK2lik3ID8w0JPEb+QWO
+ZlGf4UlC0/szcyjMjMy6iI+PAZbuzftCzObdHylRhOqy+2ztxN7f1KO+EXuze3jtzprBp+txDE7n
+cOUNxXUPNu3GZyVYvhZPqQpZpVFo6KxeRwRF0TiX4kfhV8hQ+Grkx7V4BK3x3zrbKnKX00GikJgd
+yXctZxD8yys8d0liUvyWulUWmjt5pmzrbp8uEb0uzqGTPwQZx1EXJkZFwZ5mfrG4e1s32OGrXEeq
+UldkXBcEKKWAqAMVO93Rrfch2m9wGlSYRIss71hk8DGkOGgkt5jXwzvMNf6nEqQg2cqq4auvjlJE
+fA7FveWLNbe28RDhksJJYVnlOuG0Btq97e956h3PAQ7FutTbLxfLZkRSTNS26O6ZTk1U8lJpPplV
+JS4jiTUkvtqI/iM1TmmrhbXUT7xsp7ND8N/QSSPqQ+4avv8AHO1DR2K2JzabLItt3EWj0d5tyJPp
+3YBYxrxazZXw4083c2r7ZH1IV0EovEiMUTJsXcmOPL+wSl6fRGW02az4P002ivvLOe4vuYtYJm1j
+FFQ6Xw6ZIZPo+8chfbzDNHoTivBMiJWVtSys+OemSaeS5Mj7GeZODTUJNelTfYozTeL2tVJfKfYX
+4iFAJ8wT9R7ulZ7Puz/cG5o0xtjMIlGeI6xjqUgl2GzMxJdNijbKHUONu/dMh5dk8ky4+Wgumfs4
+HftkJZ0xuJTrVdPMdWc4rUVak8I66bXGBZlufZuE61xfz77Ptp5xUYtUuSlGb1jkmXXLTCrCettC
+lm0UmW5KludJqJCVrM/AxmepGrfDcc/lm2yoNrxnuDtUlpR/plNGrYa+Y7pNzfM+U38wuPi2BIYN
+5KSS75KXIK3Es+YR9JKM1ER+JmYxwmc7gmlulvAnfYUddqnl/wDLIaKL2d0+7Py4tr0/4q0hv/vi
+6+TQa+wofbK/+WR0Wft7qd4fkxnXpf8A3aNP72unk0fEPYUPtg/pkdFGZn/zUbvLn/RxrX5fx1xh
+/e118lv4h7Bh9ssc+mT0X5avJ7qN1IdMjJC3MW1+80kzLgjW0UJpSyL8C0mXuMj8Roud7ovpKWzT
+2DETbWRMtt63yrS21thamyxt+tzHVmcX2HWqk9TTjVti9u9GYtIiv0jblIaalxnEqNJocQpKj8DG
+QokhLhCxT71srdbaw3+Dp3jsQvTM7qWO8Ds31BtiXKQ7m8ajThG0o3mNLfibGwxDNPfvyENKNLJZ
+Eltm2YLwI485HAw5dodUCa4xVsUu0OQkplHkM+XP0FfiHQO0RGvqdf6V9mP+wd8fzrqYXrI3p3eb
+6Su3/wBC3znofTHf077xv6q6S/nvYw5c8a4/2/4TTLupzs8ol7EMeN7SyKVHIaFDIjLg/YAIvvr9
+enYvN8ce74dQUCFZhg1I3A35j9TGV83luB1/lorditMMJ/1q7wdg/IsXDJTjlN0r5/1MubnlW/8A
+Rf0D/q7i6O12iEvMbiM8Ujven93q5d2JdxeObgoky7jB7BLOMbfwiI+TKM013LfSqS20lRmwu/xd
+9f3hUuqLlMhtTPUTb7nN0vdoi3WEquLhJTwOzaQ0Gd0R7gLqN4n1FuxMM23pnsG2ZrzIIGU4PnM3
+bOT4rkNY6T0O2prbGtfyYcltRcKac6FdDrSyS4y6lTa0kpJkKjkxh6i4vsqnfYEpfa+Iy3u6sTjb
+6Zr/ABA90f7n9f8A9u7Ad3PPoYv2zbYvvOfukykY5LEAAAAAAB4JBmSUqL2JWlR8fBJ88flA0XUQ
+rO7XFv2K7nt9Y0TRtNQtoZTKjJ8o2iOHdzjvoakpNKPsmxaJMjJJJURkZGZeJ/OmZ2OjX6Q0m1z5
+z9DPu03pMy9RmXbr9/RCRqv/AOLzX8JjwIMzmAAAAAAAAFff+cBT6TDZo7pvN9GzfaotlnnbndT/
+ALFkl/YmAtOuLJKpDBtRsyrYiVkREpxhMabxz48PH/pDLnV1dN9K7a/rTSh5T/8AIV1Z0Rbhb+tW
+2R13XU6NLw8FKk9DXjzd7ipIQbMzQRn/AA8eBks8zC8AAAAAAAAAAAQvvqYf8Uvbj+4C7/4jWQyH
+kn0Mn4CvXj0zf7C/Ohlb9MT/ALvO8X95Gqf7IZAOlnf+oN/l9xDksXqy86d0lKCkk6AB4nUJcQaV
+pSts+SW2tKVpWlRGlSVJURkaTI/H8AA6zvv40Qrty7we4/THyjkGloNl39hiLRpS2leB5itOW4e5
+HQRqJLTFHdtsIMvAlsHx4lwWZsvyFl2ttF5N0o0nBmcqJsXswOJ9+7yzLuF2LK2lsGQh++cw/X+H
+qU0bjpFV65wejwqvPlw/MU7OZpFTHvbzJkuH7DEhDiM21jBhNGPz6TklOcbSp2A/pQaEd7dewft3
+wWzr012UW2Go2TmTR9JvftRsuS7l85mUtKUqckV0OyjQzNXKkpjEn2JIYbvElZdzce2Y4Fsh0YQ2
++Y2NCNOyAB43E8pI/DlJkoufZyRkAOt19UHQ7fbv35dyuuosP5TH7LN17GxRnobQyrF9nxG8zitx
+ktETZRYFjay4ZJ9qTjGRkXsGY8vTEl2VF/mGyrS21am6V0GN26N4ZnvGfr60ziZ8zI1pprW+lqJf
+KulGL60qHq2tec6vH5iWqQ666rk+TVwZnwJGLBZtzLis/e9/V2iPmq86naJ5Hov6HLQ/p66QgT4R
+wsm2dCst05ShxjyJJzdjSCsqJmSlRE75sHC2qyPwv2eXwXgMQ32Usu5uPbEUtlvb4cNs2r8kXtPg
+RJ3SFx9Rb3VPZ9vzBu1LHLJSsT0hUtZtn0WO8aotns/Oa5tVNCnNknpU5h+DqQtvhR9Ll04R8KT4
+ZCyTb9xenPlfvLjrqcCk+R9O12s/3m9x2bdzWRVi3cZ0BRnQYbKdbQqJL2hn0KVGccjrcT9uVjGG
+JfdX0/aZdsmFH7U88+dbpwWOhML6XwvgNLVGTi8fkTsTuk1xJcJL+Ht8RjbAsJcAAAACxRcpP8X8
+XiOLhmuJC5+ou7WVa/37gPdRjteTONbwpmsLzl5lKSZY2hg9c2iplPIQguh3JsGYbSSz/TXUqM+T
+MZNybceKw5bF0qi6OYrV5jJxuPswPkfTu91xav7icw7Yslsm42J9wNUm7wpmW90RIu28KhPvHDjc
+lw3Iy7CUSEGXJE49VMJIjM+D0zla1rbScmnh6zWzO8JxY66ia4o+WjM/gf8AGMcFjIjn1Opc5Z2Y
+l/8AUG+j/NaanV/IL1kb1h3m+krt/wDQ0c58/wCmO/p33jf1V0l/Pexhy541x/t/wmmXdTnZ5RL2
+IY8b2lkUqOQ0AA9CwgRLGJJhTokadCmR5ESXBmMtyYcuLKZXHkxpUd1K2pEaRHdUhxtZGlSVGRkZ
+Bq1A6+n1cPT6ndi/cE7Lw+uk/wDL1uCXZ5DqexJpw4uK2K3lSsg1ROlLUsil42p8nq01K6pNU8jg
+jVHeMsq5YuqXFjhPesNFPukfgP8AG2Gvm93RsDJdO6+0Re26rPXWq8wzLMtf18olOS8Zl5/Dq2Ms
+qq+R1F0UlnOqETksGRpZmOPLRwTqiE81BYYkOzmfWHDrrJ6UxwdqEgL6Zsv/ANQHdF+57X/9u7D/
+ADCpZ59FG56ybs2imvnJlIxyToAAAAAAHidNJJ+17ANlewifeqrif7Od5WX2LbJts5riGEZW2Zcd
+DzpVjuPSnUGRFz+uouD9pkZF+AYPz5H4d5VV+8b3z239wu/03DqOS3Or+ohXCQ1h+3u1/wARrmMU
+hD7ZqLQNoAAAAAAAAZBdqsrZcHuM0/N0/WS7vYMLM66VWU0VzyGrKpQo0ZPFs5KiNuHSu4+4+Ut5
+X2WmTNXiokkc7lr2kt5b9mpji535gX3lVyk/1NXqFnWQ01ZnY1aM1V+EklNLXDp111rXsQmrxjM2
+UGZdJ8EfTzz0GoiUaOeC6unnjn3j6KPz2pq0nsAagAAAAAAABQz4IzAEN36kjFcryLug7dpGO4ll
+mRRo+hLlmTJx7Gby9jxn17DsXEx5D9VAltMPqbPq6FmlXT48cC85QlNRmXUdroo33MNPaTs+Erl7
+Zedea4PIZT/TP47keOa97vGcjxzIcddl7C1Y9DbyCitqJcxlGI5AhxyIm2hxFSUNL8FmglEkzLky
+5IdPOcpmTNoeirxE4ew7Fjodbjq294WP0knwVImwAKGXJGXxLgAQ5vqNu2jIGd/6V7gMLxC+vouy
+sAsdf5i9jGO2d4uNkmupzc6glWaaqFMcactscyVTLKnCJJorFJI+UkQvGUbm1HZcYl1oiY4/GQF6
+jq5w1aTSaUO1Dta2Dvjub0Pp+x19nVfR53s/FarKLG0w3Ia6BX4fFnot8vmSZlhVswmm2cZrZR8O
+KIlq6UlyoyI7RdLtEYtbitONuSO0pHw2HKnkYfbOy/hRI8GMzEiNIYixmkR4zDSSQ1HjspJphhpC
+SIkNMtIJKSLwIiIhh8t/a2HtAAAKGXPgYAiSfUjdteQWGbduvcTheJ3uQLtqbIdO5qeNUVjdyWZF
+TKVl2FSp7FXDlSEtuRLC2YS6vhKfKQkvEyF1ybPbjvKw84jcflUgbyw65SlTNGKkeLR/bLtLdm6d
+TagjYFntR/eVsPE8QmW9pg+Uwa2pqre6htXlrPnSKlpqHEr6RMh5bilpIiR7eeBerjcLcxDdVtyh
+zzeytCGiQprz3ntR2b9BSVeO01TQ0sZEOoo6uupqqI3+hFrauGzAgRkf9RiJHSkvwEMG76urXjr3
+y77m4mHJ3D8FvHaVRpLUWx9u30afOqdb4ZkGYS62phSrK1tfuSuemRqitr4TL8qZOtZjbcdpttJq
+U46RF8S3tpvu7qG2rQ3idaBs5O9tv7Ez3bOc682hYZhsnLr/ADbI3DwLNJDh2+RT5Fk/Chk7UqcO
+JBJ1MSMnnhEdptJcEkiLNECfbYkFGUra9HylQVJb0zBG1OwG9LftYLtH7LdQ60tILMLPLqoVsbai
+kfadd2FnSWLe2hvuGlClnjkJUWpb5Lgm4JcDE11mrOmuPKWiOwjLPC2mxAdA7IAAAAAAGAXqYdra
+O7vs03FqSBEZfzVmlVnOsHnC5XF2LhKHbnHmmlkRqa+/ENP1bqiI/wBROWO9aZ7tvuTb+w6k2P0l
+lU2/Qde7r+u3tqvPMK2dh+vtp02Z64yqkzPHJDeB5ky7HvsasWZ8aO6tmqQvyX3Y6mHkpURKbUtB
+8kZkeWJVwt0xhWXnG8XG+UrLbUpl7Q2p2XPb9tup37pTWm5aWHY1tfsjDqbKSqbaBOrLOknWEVJ2
+1FYQLFmPMjTKS1bfiOEtBcqZ6i5SZGeG321adrZx0oW+lcaCM39S3jWT5FlfZ2eOYxk2Rph49vRE
+1eO49c3pQ1SbDVvy6Zn3TCl/Km+TDho8zp6+hXHPB8XXJDzTLznSa26NHjrh/mQV9bec4fBPn/TT
+4vk+O5z3euZFi+TY43LxfTDcRzIsduaFEtxi52Et5uKq1hRCkuMpeSa0t9RoJRc8clzrnKU1I4HC
+rocXCvUosTDzfE4xLZIUNvaWBSo5DQAAAMUe9DtQ1/3n9vub6J2EXycXIYyJ+MZRHjtP2mDZvUpc
+k4zmFT5pH/rFZN+w+0RpKVDdeYUZJdMdyDNfgSEfYXTt7ZwSIzcplWVOum212x730nszN9T53q/O
+k5ZgV/NoLaRTYfkdxSWPyyiXBuaS1r6yVDsKa7gONS4rqFn1MPJ6iSslJLMcO8W6Uy29S5Q2nbrQ
+plcB+K8b/fps8UyvH999zsjIcUyrHY8nUOCMxn8hxq7omZT6M3sXFsxnbWDDbkOoQZGpKDM0kfJl
+wKZnOW1J4SNOI4lGOr4SdszLrXE41CoTChQydAAAAAAAtUklFwZACOl612KFE2To7NkIUlu6wzJ8
+XfWSSLzHseuYlpGLqJZn1eTfr45SRce8z8CxN1mx8FjzfsHql/xw3xmq35iyo8q76Ox5FHwpuV/9
+tJpOGMT05KAAAAAAAAPahQZtpNhVVZDk2NnaTI1bWVsFlcibY2E15DESFEYR9p2RJeWSUJLxMzIc
+rDL0h3orPrJGXO9W/L1rkXq71tt2+O3VXVXWuFFG5yqSqfT37JIXbJhTmW5pGiS92ZvBZ/aWWSG3
+U4fTu9MpnC6mSlTiFLjuH1zpDZkUh8ukuW20Gee8sZcjWCKlVXnLi54dXcPCT3nPeGm9dWb649sq
+coyRbnaujt1aOJV+NVz7OROc2VoLhJELPsPl+jUXgbwAAAAAAAAGXPgYAs6OOenguT5PxMvH2c+H
+vAFOjlRKPjqTz0n4nx1e32n7+AB5AAAAAeMmyJRmkiLkuD9vu/EZACvR4cGpSi/D/LzzyALy8CIv
+gAAAAAALDQXtLwP8ai/7Jl8Bx0UYIajo+KlGXwMz4MveRkZnzyOQ0LiIiLgvYAKKSSuOS8C8feRk
+fu4MjIyAFvR/11f+sr/OALkoJJcF+X8IAuAAAAAAAAUMiP2lyALTSZ/9Iy/Eai/lPkAVSkk/Ez95
+n4mf4wBb0HyZ9Rlz7iM/w/AyAFSQXv5Vx7Ork+Pxc8gC8AAAAAAUMiMuD9gA8RNqIuCUfHuLqMiL
+8RFwALugj4M+o+PcajV+D4gDyAAAAAAAABnx4mANMvrTYr946J1lmDaDNeIbO+TdWREaUR8px+xi
+q6i6k9RLlV7JF4KP8XiYoPWIxxbDxdjbmJ91f8f96SB1xSrTiv6221J+5XTX9JG5/lGFj2fRvhea
+XWUA3AAAAAFVGREajMiSgjNSleCUlxyZqP2+PsLjxMa0UPOJi0n6jkNtVTTapW56vQvffUp7ZIS9
+MDsVPFotX3JbfpejKrOOUnVuMWTHKsYqZbZl+19lDeQl6NkNwwsyiNqPmLFV1mROOcIzFk7LaW5t
+J89v9QvgY+Lznjz743vLO5yurvVxkqR/9UiOVUSXKFw6RXT4qL5FPjeUbykJ6S6TIj9/P4uC+AyI
+efh5AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAFDLkuABr59TzFTyjsy22bbZuyMZbxrMI5J5Nbf3BktW7KeSlPiZN17zxn7CIueRXM2scWw
+SOY+ifdOvqZc6/MvzKlwYdkKxX/8tC0p9JEmM+T5445/N+QfPZ+gJdZQAAAAF3s/DyBrobTtG1D0
+v+0XHN95zb7Tz9yutMK1Tc1rMfDXTJ1WQZe8wiwrHLxhTamV41Ws/rlN8q+ZkJShRdCFdWRciWNm
+4VVzXtTew8/Pfh69L31f2pnq5y5vx7pdY++7Jp72qmKviUf6lWqrkp0koZiO2y2ltJdKUl9lBElK
+EF7koShKUpSXuIiGYsPiPHZdK8RdansgAAAAAAAAAAAAHs8TAFOS/D+Y/wDMAKGtKS5NSSL8KiIg
+AJSTLnkvzgC4AAAAAAAAAAAABQz4L+T4gDi2h3dpzKsofwjFtr60yXM4rli1KxKhzrF7jJ4zlMtT
+dw3Ioa+0kWrLlU4k0yCU0XkqLhfSY3cFxtriLQuHZtNtFbbmpTlPkj9h8jabgAAAAAAAAAAAAAAA
+AAAAAAAAAAAHJF7T4AAAAAAAAAAAAAAAAHC/cJiLec6O3DiKkGtWR6zzaqZLpJziTIx6w+VUTZtu
+9SkykINPCVGSiIyIzHQubfGhOM/6alryFdFsud7VeE/l7jGr/ddpx+TEhBtdZtN+YXDhNoS4nxIy
+cSXDhGSkpUXS5yXiRc8fAfNkhvhPONf6h+lpp9JLVDzH3jdFZeOI5gAAAADeV6J+VIayrfeEOLIv
+naDDctjNGaS/92T7elmL6OetXV95NcnxwR/kGUerORikljHyazy3/wCR+yLxctZkXakhne/drT5C
+QqkyMi/EQyseXhcAAAAAAAAAAAAA9eQXU04kvAzaWZH8DJCuPZ+Eamyv0a8x17Ole4T1Y+6LbWRa
+n7fe5LuJzfM4H7Y5AjHWtzNY6mPjOP36a+VJbmZHbVVcbcJVhGbS0TpuGSy6UmRGZZWeg5et9vbl
+zKNe7s1lTbcuEp5zgOY4GVGU62+ok0/AVnlpkXdhZQafzJMlFBtLFdrPsx2WlOPuScNp7nJpVhF8
+pJmo/kXyTxzwXHJRtMjKMhOFuoiqdulm6NaUxM3/AExvXUzbYey8Z7ce9ZmkTfZjcN4vgm6q2rj4
+qSMuekfIQcM2njrHlVUCVbWBHGYtIiIqG5xpZkxy6/OTEXnLdDTSzbcq1RUO5GuCVLwXl0kqRCjU
+kjMuD4IzI/aRnz4H+EuBUSYKmtCf0lEX4z4/N8QASolFyQAryXxLwAFS8SI/iAHJH7D5AFDMklyY
+Ap1p546i8fgZACvgfh8DI/5QBCL9KNlhHrl7cUhlpLi8i70D8xLaEr/plY8/aIuozVyL7e0RMtxl
+REx70rNrrVbk6mwm6J595/k8PD8woRZi03EJ9p8fkP8AkAF/t8SAAAWmtJe1SS/GZF/KACVJV+if
+P8PwgC4AUMyL2nwALUrQouSUk/xKIwA8xHPHV/m/9IAvLxIj+IAoZkXtAFCWlXsP+H+cAXAChmRe
+JgC0nEn7D5/If8pDTv8AkBcfPHh7fAvznwNQaUu2j1msJ7lu8+X2a1GiczxW9iZFt3HDzyyzDHrK
+lcf1Im9XPkop4sBmwJm6KiV5JG4SmvNT188GJyXl+TFt/tJVTc73Z5fbx7h0m5lDrvBRNJutT4pL
++Hs8BBndLVOISfClEX8PwAC5KiURKSfJH4kZe8AVAAAAAAAAAB6UxlL7DrKyJTbzTjK0mXKVIdJS
+FpUXvSpCjGuGKmtLnCcoqTwkrpX5SC7sbHVYjsbYWLLSSV43neXURklHShJVWQWMNDbZFwRoShoj
+IyIk8GXBcD5ru8dYt4kMbOJWfpM6r7wl+6urHek1ybfHrq//AFU90/GiLL8AAAAAbMPSXyleP931
+ZUeebUbNsBzOieaMzJt96BHiZFDIyJ1tPmtuVKjQfCz4NRERcmZXvq2e6Nd3I6/eNp8h8O/8gNnp
+unUmxc0b8/b7s1V9h5NwlXNlwkv4ezw/kGbDxWLwAAAAAAAAAAAAHhf/AEFf/Ru/9gwBBt+n8+16
+lOaF8NQ7zI/w855iZDJ2cE/+ttL2qf8AtUrdoT9Y6TkVISpHPiRkZGXj7DI/Ay44GMcETUWQg6/U
+N9vuGac7s8D2hryth4vK37gdvlWWxKVhMFv+8LC8hjVknMY7MVDTbNrdwrOG5JdQfUuXFN4y8xal
+KyPkiWsuE5Cq08+krV4Z3XuMmjvCT5F71sX1D6cOuO8vca7OUwXb3q7NresgutO3uVZnlOM0TECg
+rDePyjs8nyeeltLjnKGSdU4s+lChR6rfXIuzluZ01cTD5VJ1H0biI8uxvuEf/W3cZ64XqhScu2X2
+15XQaH05QZA/T1bVJZ45h2MMWDSGnDxmLlt1jmT5nnV/VwpbLlhIJpiAh14kpQ2fS2LU9FyzaGeF
+P365XZ8RE9KmTkxgpuJ2z9l2r+p/30dpHd/Q9nXqRSZOS1GTX1HipZXdw8cVk+ITMuls1uFZ3V5l
+iseBUZtrm4sDSzJ89lcthDinfMQth2OrSXYrfcLSt1sqrTTRrpXWatz5Ud/gSUOVPW47q/UB7Ld7
+awzHSO8rfG9I7SxPprMW/Y/BLSmqNi4JJjlklLJsrfHrC1fi5PUWESaSVvoUZHJJoyJvlPVyxb4V
+2juRXG06U342Jy3CS/F85vpu8hvv1B3Pa92l2qYb3XFbNV+vsh1Gnat3MWpBfs/DrqJ6zy6vfM1d
+CZWOWFfMiOpNR8PMGnk/AVR2K9GuCw9vEwJGh9Fio9swx7O4R6fSa74u+3vx74c2s8l3DaRO27BY
+GZbJvNaMY3hsavjVeT2NhS6s16Vp+zn7REUVcz5px45fnrTUrJSjJwxbb/bIdrtbdSt09Ic7ZGwJ
+L8p/RWnR02nIXqCerT3H5B3NL7EfTnomrbaUbIHcIybYLdVVX9zOzliIqXc4vr+LevHjFFW4bGae
+++ry1bcZZWy6TZNoYU8vbabDFbie0rwq0xE8XbUc0ibvO8GJpUw/3fl/r59gFBWb+21uF7PNdQZ1
+fEyYnrjCdoYbSPW8uOxDrc3pWscobepgWc51MRFhCX5bTq0oTJbU42SpCI1lS6urEoTh1L4K4Liv
+w4nTfducVeK8n6ckudgPeRjPfR23YnvegqHcZs5M2xxTPMSekHL/AGXz3HltN31XGlq4XLqpDcli
+bBdWROLhy2vMInCWkqZc7etrnLDc1J4PbQmI0hJTSO06iLN6VH/+5G2j/wDiHvSL82YThc75/wDz
+UbmpK5af6o6n1l7pvs9Wf1Ponp+YNjGO4NT1WXb/ANpR7OVhFLdOSU4/ieNVZlEtc/yhiKbciziR
+rB9uNCgIdZOZJNRqcS0y4Z13L9mW7vb7uiNRrVCanTOiJipoJw7aP1C/cXhbncNr+43nMwG0Ydu6
+VzGa7VGD1t3VRTcfYlYRryxhwL/I6t8kGTSmI0gphfZQt4uDO0VR8oRpfAfq1fD8akYld5cTioqY
+cxsO9KX1mdl7l2zA7Re8yHHjbZtpVjQa/wBiR6FGHzrjLqFmWu417svFiKLDqcvP7tfTEkxWIiHp
+DKoz0dDykLVFZiy1HYZ9o2l1FiJsxO5DuKVu8B5e+OX/AF6u8TuT7R8Y7Y53bvtGw1nMzzJtoV+V
+vV1DjN4u4jUVHicunbcaySmuEsJhP2Lyi8kmzV5n2jPguOrlG0s3h9xmXoVN3A1u8h9lrGPWlC9s
+1Z4f3d+uP374xVXfbHGzqq19rzH6LFbvLsIY1ziZZvm1DTw4WV39nmWaMVTGR5FcWxOSX6uoJqHW
+JcQybRKLqXOVW3LFpdVqfUtb/IdNuTc5LONCKin6DtK9Y/vP7Xu4qs7fPUEVfZTia8lq8Qzd/PKG
+rottaom3sxpFblKrKniQYmV4q2ich6Q283I82B+viSPsdK07L1qlW2udZqlV5NmzA2xbhLoe4E1M
+Ded6y/cTuHto7ILTa+ic3k4HnTOz9YUcbJK+BSW7pU9/cvRrSK3Gva+2rXWZ0ZKS6/JNXT4oMj8R
+VMuw2Z11bhP+DtxJS5uqxD4zHeVYkfXUHfN61XfJrmt152yzcvvrLVblrM2zt7HIutsZu8ptsiuZ
+dnjFNOyPIoFFi9I1QY+lthiqq0fOy0kuRIWpCm0lcJtny/aZn66rvHNVHkc5Gx5NylM4Up33lakP
+xWn/AFr/AFFe3aftPTW3EStx7GWmxwPFKnamPMxc61huMrZmmb+daoK6tl5nBakuOtfczyTW/L+X
+8mQlo1oc3u5Vs0ln2hFfqoi82w4Uu8pr9NUmMou3n3N+vB2nlim6d+55tjAcezG8SmmTf1Wqr3AX
+LZbLlijFr7Ecfgz4+MOz4TK/KgyzivrQ26TSiW2Zp2xLdlme70WPUi18v+JyyJFzjYOqiqhLI9Pf
+u4a71+0/W2+3KuLQZNct2uO59QQnVu19TnmJ2D1RkrVY48tx5NTOeZTNhpdUa0RZLaVGZkajoNzh
+1QJiw114/ITUR9H2eMm00Tdzfqtd5fdr3PWvZ/6X9exXxaa4vKCw2i3DpJ19kysWllCynK2LrJWZ
+GNa91vUTo7jDFgtl+VPM21tLSb7LB2aFZLfb4fTbrVvU+RiRbs6U+90WGib3KY/bg3r65vpl2uGb
+W7g9jM7c1Td3sKjnptrPF9h69sbA/mZacOubOux7Gsswa6t4MV04s1pCUOKSZIW8ptTJ99mJlq+J
+0W30rRKOJxy5xauI/wCr8+JKl7ZO47Eu6nt0193B4E1Kg0ewcQO8KpnPNv2WN3sT5uBkGM2braUN
+uWGO30F+KtZISl3yicJJJWRCjy4b0KY5Ef8ACQnGHOKzxk5CGtoL1a/VW2ldZbpDWWaXe6tybYbg
+Y5rRSsLwNydr1FVbTrDK8oqokHHqipKY9SNtx1TbhbldVsk4+tJueWZZEl5dskeG3Oer4dHDxWlV
+01qQNE+Y6vBZ01HvX3qCesD6e28sUi91OVZ5fk9FjZBP1btP9jL3F9hYSUo2LRGNZZicF2PCtkKQ
+tpMqBLU5BldBSGlIUSF7I1jsd3hOVQav1DfIb0lzY736hO9JEvqF7T72dj9qvbvtX01Y2aSsq2Lk
+OI5pct47W4HOs0asyfXlrdx0WzGeE5VNkzczYKHPlzN7zU8EZt9QqNpbtsa4V0XbvmdPz4aCRmOP
+1RUWFpq2YENftxn96MTu/nT+2+Pkj/eN+0m2V2EenhYbJyNzI3SvT22hcLIkqxJDrRLnFJIi6EmS
+vI/6AydcHbW3Zm6JtK1wO83VTbSngqV6Gk5yY5UladIQmd9p27+7LRnp37Q3t6gVVl07cWqi3BnV
+nTXkTEK6/s8OxuEzOxGsZRhLCaNmPZONqZQ70G6hKjU5z0kQxZNYiS7u3Gta7sdzDXsLLHqfoh70
+j05oL1F3Ret56lWSbNzftx2UnEcbwN+N954zhFzgeuMPx1+6iyp9NiVXJyiJa5Dkt3IiQFEl+W8p
+HV9p15hLnSm5y7flmxK0zLpVypezSQ8efMlOK6ynm0+L/P6Ddj6Qu1vUx2LXbTqe+XFnIOIYDbfs
+lhWXZvj0bENr3+ZU84oeUVb9bTRolPk+GVjCT6bzyWjkSzJEd2W11rbqt7atDb/+2VKtJJw65lXp
+0wN3aT5IjMQRIlQAAAAAAAHiWRnyRF4mnjnjng+eSPj8gGi6iGt32Y2jFu8LuDrGm/LZfzxy9ZTy
+s/1eTVdffKMlOpStX6+xX7CNBHylJmRDAOcG+DfpCeWu/wDvHv17pF4qu3u/2FVcTFtqtqvHYtFd
+VHyU7piYKsfSQAAAABmJ6fr7sfvP7fVNLU2buYzIyzT4GtmRjV4082o+PFtxtRkZe8WnKCql/j4e
+X/CfMPvgNI77vuYd5MUShmv/AMtGomNp/RL8v8ZjPx4JFwAAAAAAAAAAAADwveKFF8W3P+wYAg0e
+gLIjxPUkzV2XIjxWS1HvJBvSX2Y7ZLXnuJ9Cet5aEmpXj4EfPhyMmZsocTLbSUafA+ZSuWmncmuI
+TNtl9wWkdNY5Nyram2NeYBQV8Z6W/YZRl1LWk4ywk1OFDjOSzm2L5mXCGYzbzziuEpSZnwMasx5E
+leEjTmPZyFgV1tNdafIQYvUW7l7/ANV7viwnD+3vHLq1x6F8rpTRkB+O9Gs8mK0u3rDKtk2kFSlf
+clRKeX82fnJbciVEBDj/AEq60IyjaYS5cs7kqQiJI1lUlSXZ83o9KeY+Xs7RvI9cfUVrq30qNM64
+wl1xzDNJZ3obF8s+VhcMysWxnDL3DaizmLQTaIMJrLH4D61GnpU6tKeCNRcVfKbzVWYOO/rrxwJS
+6t8K2cFF0Jgan/T07U/U839251WUdn/enT6y1RUZNlFC7rePtrO8SsMSySPaOSrj73x/HsOtq+HI
+vfm0T2XPmHFSY8hK+r2kmbvlwsjM9ymfFqrc8o6cKLKrj4sOJgfsNn+j36hm7NywKPbneL26bL39
+j+I1d7W0mabrzK82ZU4NBtpL1dZRqqVgirlnHIt448tp0myaS+pR8/aHBRmOAzDVuKxw47n1Tm6B
+KqeRXq0JA/q6dqdj3R9hec4/CjpsdqamrK/cOEvx20uP2OS4FVvuZNSRXHG0KJOVYy7YRUpIkkt5
+bJqL7JcVeyzegXNt7HClXNXL9JJXCMkmPXShEy116i9ph3pV7h7IGJlh+1eWbTqYuJzEqWceNo7O
+DdyXZ1Q1KNPlRENZBSHFJozJbjOQOGjlLayF9m2Zt29t3T+U4eJBVSnmoHRP5gk2egn2vp0R2U1G
+zLuvONnPczbo2lauSWlNSo2ENMKqdaVfStKFpYcpGnbUiMvFdsZ8mREKbma4JcJu6nqzWiklbLH6
+ND3ntDzmwivab1l3K5H6jexNV6n27E7fO5a12zvyhrs3yvMrLDnF3j2TX823xFnJqmutp7t3mFd4
+RmWW1KmmRJSf20kq7TZcRcvx3ZLe/Rw6NCEGxQ+1NcZTwuU2p719OP1dY+qMxT3HeodrRvSsqA1C
+zs9qdwGwWMCegyJ0VMWNkB3WCN16m3LPyfKSszV55I6S6uBX4d3sVDyVxYv6hNW7Tjh9BKyIsuph
+eK5oNxXo1dkW2+x3Sez8O2tlmvsvXsbZNfsfFLHW1/aZDQKoJmF0FSUkpljU1CVKsHqzzm3GUONv
+MqSolmXHEFfri1c53HboWhNzDTypr+g71ujVRGODVrNDHpUp49cnbfj/APiLvQ/tjZf5xZL3/wDz
+UbmpIe0/1Jz9tfmU9T6imsvKvv01hf5Uwuwwmz0bg6qGO22tBSKvHs5yks3rEPfYQ9JW7NSpRIMn
+EIlI6j4Ukj7OT6krtclpn1g57r6TTyITHtO7E1ns7U+EZ/qG3o7rWV5i9RLxKyx+TFdqY1IxBZaj
+15FGUpqvfpW2vln4y+hyK6yptxKVIMixrPbfaq76mtJGPJp0k0241U1ing4EKLf2QYXuX15MWuO3
+I4VpXSu6vRcVVxijrL1df5fh7uMp2flFbMr2yjuwlP0085ExpS23Djuvm4pKzUMks8ZjKTjL6fd8
+hXlRly9eZ1mxb6npR/sd2aqT7f2z3QSS8CJSv2awY0pMzNP2Ve/xLkhEZKX9a5zJ3Ts37BWm+RV7
+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
+AAAAAAAAAAAAAAAAAAAAAAAAD//Z</image>
+               </value>
+               <bind match="none"/>
+               <desc>
+                  <text name="embeddedHref">C:\Users\Mostafa\Desktop\IWAN LOGO.jpg</text>
+               </desc>
+            </field>
+            <?templateDesigner expand 1?></subform>
+         <subform layout="tb" name="TheREST" w="203.2mm">
+            <bind match="none"/>
+            <subform columnWidths="66.5255mm 66.5255mm 70.1488mm" layout="table" name="ITAB">
+               <border>
+                  <edge/>
+               </border>
+               <subform id="HeaderRow_ID" layout="row" name="HeaderRow">
+                  <assist role="TH"/>
+                  <draw h="7.5373mm" name="Cell1">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                        <fill>
+                           <color value="215,235,255"/>
+                        </fill>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text xliff:rid="BDEB1BD2-18F7-4B08-BE69-7C74626E0BC5">PO Number</text>
+                     </value>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="center" vAlign="middle"/>
+                  </draw>
+                  <draw h="7.5373mm" name="Cell2">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                        <fill>
+                           <color value="215,235,255"/>
+                        </fill>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text xliff:rid="C19D0D90-B46B-41F7-BEC2-D6D43036CC1F">Building Number</text>
+                     </value>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="center" vAlign="middle"/>
+                  </draw>
+                  <draw h="7.5373mm" name="Cell3">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                        <fill>
+                           <color value="215,235,255"/>
+                        </fill>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text xliff:rid="BA169D07-D18C-4D63-AB8D-9575A4D74BE8">Total Values </text>
+                     </value>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="center" vAlign="middle"/>
+                  </draw>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <occur max="-1"/>
+                  <bind match="none"/>
+                  <?templateDesigner expand 0?></subform>
+               <subform layout="row" name="Row1">
+                  <assist role="TR"/>
+                  <field h="7.2937mm" name="Cell1">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <bind match="dataRef" ref="$.PO_NO"/>
+                  </field>
+                  <field h="7.2937mm" name="Cell2">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <bind match="dataRef" ref="$.BUILDING_NO"/>
+                  </field>
+                  <field h="7.2937mm" name="Total_value">
+                     <ui>
+                        <numericEdit/>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <bind match="dataRef" ref="$.TOTAL_VAL"/>
+                  </field>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <bind match="dataRef" ref="$.DATA[*]"/>
+                  <occur max="-1"/>
+                  <?templateDesigner expand 1?></subform>
+               <subform id="FooterRow_ID" layout="row" name="FooterRow">
+                  <assist role="TF"/>
+                  <draw colSpan="2" h="6.9104mm" name="Cell1" w="132.945mm">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                        <fill>
+                           <color value="215,235,255"/>
+                        </fill>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <text xliff:rid="027A4B02-F05D-44CC-8A35-6CF2434A997F">TOTAL</text>
+                     </value>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="center" vAlign="middle"/>
+                  </draw>
+                  <field access="readOnly" h="6.9104mm" name="Cell3">
+                     <ui>
+                        <numericEdit/>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                        <fill>
+                           <color value="215,235,255"/>
+                        </fill>
+                     </border>
+                     <bind match="none"/>
+                     <calculate>
+                        <script contentType="application/x-javascript">var fields = xfa.layout.pageContent(xfa.layout.page(this)-1, "field", 0);
+var total = 0;
+for (var i=0; i &lt;= fields.length-1; i++)
+{
+	if (fields.item(i).name == "Total_value")
+	{
+		total = total + fields.item(i).rawValue;
+	}
+}
+this.rawValue = total;
+</script>
+                     </calculate>
+                  </field>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <occur max="-1"/>
+                  <bind match="none"/>
+                  <?templateDesigner expand 0?></subform>
+               <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+               <overflow leader="HeaderRow" trailer="FooterRow"/>
+               <bind match="dataRef" ref="$.ITAB"/>
+               <?templateDesigner expand 0?></subform>
+            <subform columnWidths="50.8002mm 50.8002mm 50.8002mm 50.615mm" layout="table" name="Remarks">
+               <border>
+                  <edge/>
+               </border>
+               <subform layout="row" name="Row1" y="0mm">
+                  <assist role="TR"/>
+                  <draw h="22.7873mm" name="Cell1">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="2D7B827C-7C9C-49B3-9C01-02EEB3088880">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="letter-spacing:0in"><span style="xfa-spacerun:yes">  </span><span style="font-family:Calibri;font-size:11pt">CPO<span style="xfa-spacerun:yes"> </span></span></p></body>
+                        </exData>
+                     </value>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="center"/>
+                  </draw>
+                  <draw colSpan="2" h="22.7873mm" name="Cell2" w="101.6mm">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="center" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                  </draw>
+                  <draw h="22.7873mm" name="Cell4">
+                     <border>
+                        <edge/>
+                        <corner thickness="0.1778mm"/>
+                     </border>
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <value>
+                        <exData contentType="text/html" xliff:rid="4F446ACC-1474-4A5E-AB99-4C508A3CF4FA">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="font-family:Calibri;font-size:11pt;letter-spacing:0in">Supply Chain Head</p><p style="text-align:left;font-family:Calibri;font-size:11pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p></body>
+                        </exData>
+                     </value>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="center"/>
+                  </draw>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <bind match="none"/>
+                  <?templateDesigner expand 0?></subform>
+               <keep intact="contentArea"/>
+               <bind match="none"/>
+               <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+               <?templateDesigner expand 0?></subform>
+            <?templateDesigner expand 0?></subform>
+         <bind match="none"/>
+         <overflow target="Page1.ContentArea"/>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">9.0.1.0.20091206.1.615263.583615</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 124 31 00030006001D0024002500260029002F00310032003300370039004400450046004700480049004A004C004D004F0050005100520055005600570058005B #:ABCFLNOPTVabcdefgijlmnorstux?>
+      <?renderCache.subset "Calibri" 0 0 ISO-8859-1 4 64 16 00030012002C004B0057005E0102011A011E015A015D016F0176018901B501C7 CHOPSadehilnpuy?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000), objsnap:1, guidesnap:1, pagecentersnap:-766211341?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 130?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://deva.iwangroup.org:8000/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+   <psMap>
+      <font posture="normal" psName="Calibri" typeface="Calibri" weight="normal"/>
+   </psMap>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZMM_COVER_PAGE_FM">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <ITAB dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <PO_NO/>
+               <BUILDING_NO/>
+               <TOTAL_VAL/>
+               <CURRENCY/>
+            </DATA>
+         </ITAB>
+         <WA_HEAD>
+            <PRG_NAME/>
+            <PRG_ADS/>
+            <VENDOR/>
+         </WA_HEAD>
+         <TOTAL/>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c043 52.398682, 2009/08/10-13:00:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2018-10-22T09:28:55Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 10.0</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 10.0</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:6681d054-b0ff-4a0c-b9aa-62d76077bbdf</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>9.0.1.0.20091206.1.615263.583615</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>
